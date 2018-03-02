@@ -16,7 +16,7 @@ for r in range(2, sheet.max_row -1):
 smtpObj = smtplib.SMTP('smtp-mail.outlook.com', 587)
 smtpObj.ehlo()
 smtpObj.starttls()
-smtpObj.login('dhhh@live.com', 'Vi$ta2047')
+smtpObj.login('xxxxxxxxxx@live.com', '*******')
 for name, subDict in EmailsToSend.items():
     message = """
     Subject: New PEN. \n
@@ -28,6 +28,6 @@ for name, subDict in EmailsToSend.items():
     ZR""" % (name, ''.join(list(subDict.values())))
 
     print('Sending to %s ...' % name)
-    smtpObj.sendmail('dhhh@live.com',subDict.keys(), message)
+    smtpObj.sendmail('xxxxxx@live.com',subDict.keys(), message)
 
 smtpObj.quit()
