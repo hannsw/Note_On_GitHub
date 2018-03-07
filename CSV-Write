@@ -1,0 +1,7 @@
+import csv
+
+outputFile = open('output.csv', 'w', newline='') # newline='' means no spare line
+outputWriter = csv.writer(outputFile)
+outputWriter.writerow(['a', 'b'])
+outputWriter.writerow(['1', '2'])
+outputFile.close()
