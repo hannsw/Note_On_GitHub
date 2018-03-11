@@ -1,0 +1,6 @@
+import csv, os
+
+# Loop through every file in the current working dir
+for csvFilename in os.listdir('.'):
+   if csvFilename.endswith('.csv'):
+       # do something
